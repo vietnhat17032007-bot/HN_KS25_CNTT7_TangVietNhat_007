@@ -11,13 +11,11 @@
     <header class="header">
         <div class="container">
             <div class="header-top">
-                <nav class="navigation">
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="#home">Trang chủ</a></li>
-                        <li class="nav-item"><a href="#products">Sản phẩm</a></li>
-                        <li class="nav-item"><a href="#about">Về chúng tôi</a></li>
-                        <li class="nav-item"><a href="#contact">Liên hệ</a></li>
-                    </ul>
+                <nav>
+                    <a href="#home">Trang chủ</a> 
+                    <a href="#products">Sản phẩm</a> 
+                    <a href="#about">Về chúng tôi</a> 
+                    <a href="#contact">Liên hệ</a>
                 </nav>
             </div>
         </div>
@@ -176,32 +174,5 @@
             </p>
         </div>
     </footer>
-
-      <script>
-      // Chặn menu chuột phải
-      document.addEventListener("contextmenu", (e) => e.preventDefault());
-
-      // Chặn chọn văn bản (không tuyệt đối)
-      document.addEventListener("selectstart", (e) => e.preventDefault());
-
-      // Chặn kéo thả
-      document.addEventListener("dragstart", (e) => e.preventDefault());
-      document.addEventListener("keydown", (e) => {
-        const k = e.key.toLowerCase();
-
-        // F12
-        if (e.key === "F12") e.preventDefault();
-
-        // Ctrl+Shift+I / J / C (Chrome/Edge)
-        if (e.ctrlKey && e.shiftKey && (k === "i" || k === "j" || k === "c"))
-          e.preventDefault();
-
-        // Ctrl+U (view source)
-        if (e.ctrlKey && k === "u") e.preventDefault();
-
-        // Cmd+Opt+I (macOS)
-        if (e.metaKey && e.altKey && k === "i") e.preventDefault();
-      });
-    </script>
 </body>
 </html>
